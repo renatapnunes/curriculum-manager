@@ -3,6 +3,8 @@
 
 _Projeto desenvolvido para o Desafio Técnico do processo seletivo da Ilegra
 
+➡️ Acesse à aplicação por este link: [CURRICULUM MANAGER](https://curriculum-manager.vercel.app/home)
+
 ### Contexto
 Este projeto consiste em um gerenciador de currículos, que permite ao usuário adicionar um novo através de um formulário, visualizar a lista de currículos cadastrados, visualizar os dados de um currículo e deleta-lo caso queira.
 
@@ -24,7 +26,7 @@ Caso a aplicação não abra sozinha, você pode acessar no seu browser `http://
 ![Pagina principal da aplicação](https://github.com/renatapnunes/curriculum-manager/blob/main/curriculum-manager/src/assets/home-page.png)
 ![Formulario de cadastro de curriculo](https://github.com/renatapnunes/curriculum-manager/blob/main/curriculum-manager/src/assets/add-page.png)
 
-Na página principal da aplicação, que pode ser acessada pela rola '/', são listados, caso existam, todos os currículos salvos no local storage.
+Na página principal da aplicação, que pode ser acessada pela rola '/home', são listados, caso existam, todos os currículos salvos no local storage.
 Ao clicar em um dos currículos, a aplicação é redirecionada para a página de detalhes, acessada pela rola '/view/:id', onde é possível visualizar todos os dados cadastrados da pessoa candidata.
 Na página principal, também é possível excluir um currículo cadastrado.
 Todas as páginas possuem um cabeçalho e rodapé. No cabeçalho, estão disponíveis dois links de navegação: um para a página principal e outro para a de formulário de cadastro.
