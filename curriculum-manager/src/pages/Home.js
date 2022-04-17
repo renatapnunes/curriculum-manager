@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { ContainerHome, ContainerLinks, LinkCurriculum } from '../styles/styles';
+
+import illustration from '../assets/recruitment.png';
+import doc from '../assets/doc.png';
+import iconDelete from '../assets/delete.png';
 
 function Home() {
   const [listCurriculum, setListCurriculum] = useState([]);
@@ -19,21 +23,27 @@ function Home() {
   };
 
   const getList = (name, id) => (
-    <div key={id}>
-      <Link to={`/view/${id}`}>{name}</Link>
-      <button type="button" onClick={() => deleteCurriculum(id)}>X</button>
-    </div>
+    <ContainerLinks key={id}>
+      <div>
+        <img alt="Documento" src={doc} />
+        <LinkCurriculum to={`/view/${id}`}>{name}</LinkCurriculum>
+      </div>
+      <button type="button" onClick={() => deleteCurriculum(id)}>
+        <img alt="Delete" src={iconDelete} />
+      </button>
+    </ContainerLinks>
   );
 
   return (
-    <div>
+    <ContainerHome>
       <Header />
+      <img alt="Busca por candidatos" src={illustration} />
       <h3>Currículos cadastrados</h3>
       <section>
         { listCurriculum.map(({ name, id }) => getList(name, id)) }
       </section>
       <Footer />
-    </div>
+    </ContainerHome>
   );
 }
 
