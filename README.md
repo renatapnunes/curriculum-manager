@@ -26,11 +26,11 @@ Caso a aplicação não abra sozinha, você pode acessar no seu browser `http://
 ![Pagina principal da aplicação](https://github.com/renatapnunes/curriculum-manager/blob/main/curriculum-manager/src/assets/home-page.png)
 ![Formulario de cadastro de curriculo](https://github.com/renatapnunes/curriculum-manager/blob/main/curriculum-manager/src/assets/add-page.png)
 
-Na página principal da aplicação, que pode ser acessada pela rola '/home', são listados, caso existam, todos os currículos salvos no local storage.
-Ao clicar em um dos currículos, a aplicação é redirecionada para a página de detalhes, acessada pela rola '/view/:id', onde é possível visualizar todos os dados cadastrados da pessoa candidata.
+Na página principal da aplicação, que pode ser acessada pela rota '/home', são listados, caso existam, todos os currículos salvos no local storage.
+Ao clicar em um dos currículos, a aplicação é redirecionada para a página de detalhes, acessada pela rota '/view/:id', onde é possível visualizar todos os dados cadastrados da pessoa candidata.
 Na página principal, também é possível excluir um currículo cadastrado.
 Todas as páginas possuem um cabeçalho e rodapé. No cabeçalho, estão disponíveis dois links de navegação: um para a página principal e outro para a de formulário de cadastro.
-Na página de adicionar novos curriculos, acessada pela rola '/add', há disponível um formulário onde o usuário pode inserir as informações da pessoa candidata. Após validação dos dados, o novo currículo é adicionado ao local storage.
+Na página de adicionar novos curriculos, acessada pela rota '/add', há disponível um formulário onde o usuário pode inserir as informações da pessoa candidata. Após validação dos dados, o novo currículo é adicionado ao local storage.
 
 ### Dependências
 Juntamente com o **React.js**, foi usado neste projeto o **Hook useForm**, além das seguintes dependências:
