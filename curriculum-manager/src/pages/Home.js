@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
 function Home() {
   const [listCurriculum, setListCurriculum] = useState([]);
 
@@ -24,10 +27,12 @@ function Home() {
 
   return (
     <div>
-      <h2>Currículos cadastrados</h2>
+      <Header />
+      <h3>Currículos cadastrados</h3>
       <section>
         { listCurriculum.map(({ name, id }) => getList(name, id)) }
       </section>
+      <Footer />
     </div>
   );
 }
