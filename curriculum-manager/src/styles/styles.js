@@ -14,6 +14,7 @@ export const HeaderStyle = styled.header`
 `;
 
 export const LinkStyle = styled(Link)`
+  color: #06113e;
   font-size: 0.8rem;
   margin: 1.5rem;
   text-decoration: none;
@@ -50,6 +51,7 @@ export const ContainerLinks = styled.div`
     align-items: center;
     box-shadow: 0.1rem 0.1rem 0.2rem #c5cbd3;
     border-radius: 0.5rem;
+    color: #06113e;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -82,6 +84,7 @@ export const ContainerLinks = styled.div`
 `;
 
 export const LinkCurriculum = styled(Link)`
+  color: #06113e;
   text-decoration: none;
 `;
 
