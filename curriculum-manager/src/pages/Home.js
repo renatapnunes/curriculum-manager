@@ -9,11 +9,24 @@ function Home() {
     setListCurriculum(curriculums);
   }, []);
 
+  const deleteCurriculum = (id) => {
+    const listFiltred = listCurriculum.filter((curriculum) => curriculum.id !== id);
+    setListCurriculum(listFiltred);
+    localStorage.setItem('curriculums', JSON.stringify(listFiltred));
+  };
+
+  const getList = (name, id) => (
+    <div key={id}>
+      <Link to={`/view/${id}`}>{name}</Link>
+      <button type="button" onClick={() => deleteCurriculum(id)}>X</button>
+    </div>
+  );
+
   return (
     <div>
       <h2>Currículos cadastrados</h2>
       <section>
-        { listCurriculum.map(({ name, id }) => <Link key={id} to={`/view/${id}`}>{name}</Link>) }
+        { listCurriculum.map(({ name, id }) => getList(name, id)) }
       </section>
     </div>
   );
