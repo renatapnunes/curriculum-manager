@@ -1,0 +1,26 @@
+const data = {
+  id: 'a12b3c4e5f',
+  name: 'Renata Nunes',
+  city: 'Formiga',
+  state: 'MG',
+  country: 'Brasil',
+  email: 'renatanunes231@yahoo.com.br',
+  phone: '11 000000000',
+  linkedin: 'https://www.linkedin.com/in/renata-p-nunes/',
+  github: 'https://github.com/renatapnunes/',
+  gender: 'feminino',
+  objective: 'Meu objetivo principal é desenvolver uma carreira aplicada à bons propósitos.',
+  institution: 'Trybe',
+  course: 'Desenvolvimento Web',
+  'course-type': 'Complementar',
+  'course-start': '2021',
+  'course-conclusion': '2022',
+  company: 'Trybe',
+  position: 'Summer Job Instrução',
+  'job-start': '2021',
+  'job-output': '2022',
+  'job-description': 'Realizar monitorias técnicas individuais e coletivas.',
+  'orthers-info': 'Inglês intermediário',
+};
+
+export default data;
