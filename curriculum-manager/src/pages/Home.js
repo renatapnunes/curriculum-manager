@@ -13,7 +13,7 @@ function Home() {
 
   useEffect(() => {
     const curriculums = JSON.parse(localStorage.getItem('curriculums'));
-    setListCurriculum(curriculums);
+    if (curriculums) setListCurriculum(curriculums);
   }, []);
 
   const deleteCurriculum = (id) => {
