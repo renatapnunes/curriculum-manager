@@ -38,12 +38,15 @@ Juntamente com o **React.js**, foi usado neste projeto o **Hook useForm**, além
 - **uniqid**: para gerar ids únicos;
 - **yup e @hookform/resolvers/yup**: para validação dos dados;
 - **react router dom**: para gerenciamento das rotas;
+- **react testing library**: para os testes
 - **styled components**: para estilização da aplicação;
 - **esLint airbnb**: para detecção de problemas e padronização de estilo;
 
 ### Próximos passos
 
- - Implementar testes unitários e de integração
+ - Implementar uma cobertura maior de testes
+ - Implementar um filtro para busca de currículo
+ - Implementar uma tela de login e registro
 
 ### Meus contatos
 Estou aberta a feedbacks sobre este projeto.
